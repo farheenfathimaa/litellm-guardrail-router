@@ -1,10 +1,12 @@
-import os
 from typing import List, Optional
 
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
-from app.config import MAX_OUTPUT_CAP, PRICING, PROVIDERS, aws_credentials_present
+load_dotenv()
+
+from app.config import PRICING, PROVIDERS, aws_credentials_present
 from app.guardrails import check_input, check_output, get_events
 from app.router import RoutingError, route_request
 from app.usage import tracker

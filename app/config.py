@@ -26,13 +26,13 @@ PROVIDERS: List[ProviderConfig] = [
     ),
     ProviderConfig(
         name="groq",
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         litellm_prefix="groq/",
         priority=2,
     ),
     ProviderConfig(
         name="gemini",
-        model="gemini-1.5-flash",
+        model="gemini-flash-lite-latest",
         litellm_prefix="gemini/",
         priority=3,
     ),

@@ -73,7 +73,7 @@ class TestChatEndpoint:
         mock_route.return_value = {
             "content": "Short reply",
             "provider": "gemini",
-            "model": "gemini-1.5-flash",
+            "model": "gemini-flash-lite-latest",
             "input_tokens": 3,
             "output_tokens": 5,
             "total_tokens": 8,
